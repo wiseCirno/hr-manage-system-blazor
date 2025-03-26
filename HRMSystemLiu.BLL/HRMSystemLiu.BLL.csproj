@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\HRMSystemLiu.DAL\HRMSystemLiu.DAL.csproj" />
-      <ProjectReference Include="..\HRMSystemLiu.Model\HRMSystemLiu.Model.csproj" />
+        <ProjectReference Include="..\HRMSystemLiu.DAL\HRMSystemLiu.DAL.csproj"/>
+        <ProjectReference Include="..\HRMSystemLiu.Model\HRMSystemLiu.Model.csproj"/>
     </ItemGroup>
 
 </Project>
