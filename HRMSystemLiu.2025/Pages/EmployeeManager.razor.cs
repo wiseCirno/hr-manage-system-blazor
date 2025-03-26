@@ -1,5 +1,6 @@
 using System.Data;
 using System.Text;
+using HRMSystemLiu._2025.Utils.Helper;
 using HRMSystemLiu.DAL;
 using HRMSystemLiu.Model;
 using HRMSystemLiu.Model.Database;

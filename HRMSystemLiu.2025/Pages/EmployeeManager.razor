@@ -1,4 +1,5 @@
 @page "/employees"
+@using HRMSystemLiu._2025.Utils.Helper
 @using HRMSystemLiu.Model.Web
 @rendermode InteractiveServer
 @inject IJSRuntime Js
@@ -45,7 +46,7 @@
                         Basic employee info in HRMSystem
                     </p>
                     <div class="table__container">
-                        @_helper.RenderTable(_employeeTable)
+                        @SettingHelper.RenderTable(_employeeTable)
                     </div>
                     <div class="input-group">
                         @* Name *@
