@@ -1,5 +1,6 @@
 using System.Data;
 using HRMSystemLiu.Model;
+using HRMSystemLiu.Model.Database;
 using MySqlConnector;
 
 namespace HRMSystemLiu.DAL;

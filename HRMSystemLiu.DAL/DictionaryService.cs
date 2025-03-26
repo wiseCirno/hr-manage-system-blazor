@@ -1,4 +1,5 @@
 using HRMSystemLiu.Model;
+using HRMSystemLiu.Model.Database;
 
 namespace HRMSystemLiu.DAL;
 

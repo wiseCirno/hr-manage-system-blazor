@@ -1,4 +1,4 @@
-namespace HRMSystemLiu.Model;
+namespace HRMSystemLiu.Model.Database;
 
 public class Dictionary
 {

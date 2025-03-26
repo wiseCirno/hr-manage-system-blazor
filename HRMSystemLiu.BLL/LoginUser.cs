@@ -1,6 +1,5 @@
 using HRMSystemLiu.DAL;
-using HRMSystemLiu.Model;
-using MySqlConnector;
+using HRMSystemLiu.Model.Database;
 
 namespace HRMSystemLiu.BLL;
 
@@ -56,10 +55,8 @@ public class LoginUser
         };
 
         if (!await OperationLogService.AddOperationLogAsync(log))
-        {
             throw new OperationCanceledException("Insert operation failed.");
-        }
-        
+
         return loginResult;
     }
 }
