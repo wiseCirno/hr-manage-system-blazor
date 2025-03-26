@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@inherits LayoutComponentBase
+
+<div class="neko-main-wrapper">
+    <header class="neko-top-header">
+        <div class="neko-main-logo">
+            <a href="/" class="no-underline text-black">HRMS</a>
+        </div>
+        <nav class="neko-top-nav">
+            <a href="/feedback" class="neko-top-nav-link">Feedback</a>
+            <a href="/changelog" class="neko-top-nav-link">Changelog</a>
+            <a href="/help" class="neko-top-nav-link">Help</a>
+            <a href="/docs" class="neko-top-nav-link">Docs</a>
+            <div class="neko-main-user">
+                <AuthorizeView>
+                    <Authorized>
+                        <img src="@GetUserAvatar()" alt="Avatar" class="neko-main-avatar"/>
+                        <span class="neko-main-username">@context.User.Identity?.Name</span>
+                    </Authorized>
+                    <NotAuthorized>
+                        <a href="/login" class="neko-top-nav-link">Login</a>
+                    </NotAuthorized>
+                </AuthorizeView>
+            </div>
+        </nav>
+    </header>
+    <nav class="main-function-header">
+        <NavLink href="/overview" class="main-function-button" active="active" Match="NavLinkMatch.All">
+            Overview
+        </NavLink>
+        <NavLink href="/settings" class="main-function-button" active="active" Match="NavLinkMatch.All">
+            Settings
+        </NavLink>
+        <NavLink href="/employees" class="main-function-button" active="active" Match="NavLinkMatch.All">
+            Employees
+        </NavLink>
+        <NavLink href="/administration" class="main-function-button" active="active" Match="NavLinkMatch.All">
+            Administration
+        </NavLink>
+    </nav>
+    <div class="min-h-screen flex flex-col">
+        <main class="flex-1">
+            @Body
+        </main>
+    </div>
+    <footer class="main-footer">
+        <span>© @DateTime.Today.Year HRMSystem. All rights reserved.</span>
+    </footer>
+</div>
+
+@code {
+    static string GetUserAvatar()
+    {
+        return "/images/placeholder-avatar.jpg";
+    }
+}

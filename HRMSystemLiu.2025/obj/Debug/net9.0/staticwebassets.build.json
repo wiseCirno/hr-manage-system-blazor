@@ -1,0 +1,3525 @@
+{
+  "Version": 1,
+  "Hash": "5m7Ie40RqGp65Xi8nDNSs7FOMKCFXvmVj9/OCOA38RE=",
+  "Source": "HRMSystemLiu.2025",
+  "BasePath": "_content/HRMSystemLiu.2025",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HRMSystemLiu.2025/wwwroot",
+      "Source": "HRMSystemLiu.2025",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/0lipfab5a1-ntexl2045w.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "js/file-download#[.{fingerprint=ntexl2045w}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/js/file-download.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "dgyon9goow",
+      "Integrity": "bf8Ng1RjYBJUsgd1ZiFW0aKD/fSJOuzpz/N1JXySbBk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/js/file-download.js"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/6mau52sh18-6i2y5pqo38.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/login#[.{fingerprint=6i2y5pqo38}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/login.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "qw1qnmi6cr",
+      "Integrity": "Krs2FqOkL1QWH5ZYRwhF1VgNpMnnvSQPgwPwdRKvfbY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/login.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/ejro1r6idx-nozntlolh9.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "css/app#[.{fingerprint=nozntlolh9}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fwemj3q4li",
+      "Integrity": "EYzbh7tcg7T9uOrHDEGGnAwn8Holxt3FCk3S323B3hw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.css"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/gmokrpsg0g-fyz8ggyjbm.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "app#[.{fingerprint=fyz8ggyjbm}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/app.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "6ipjmn1ytg",
+      "Integrity": "3in3zA1yX9UnG+tI+1os2k7TFimc+Eor2ICf0OW5LEI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/app.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/i75fci5sok-q77i65r7gj.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/new#[.{fingerprint=q77i65r7gj}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/new.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "y28ydmesek",
+      "Integrity": "aoJ/pPyabeRj8N0OAJLuUSc5NT0DYSOqLRhvI7F4JAk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/new.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/jisnfh1eho-vk50h69gp6.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/delete#[.{fingerprint=vk50h69gp6}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/delete.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "c0shgvj93v",
+      "Integrity": "9PtRVH7ipUHiu7LQYR0ssyuq+Et4TfXdLvmiIrZMeLg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/delete.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/m67z9o7ws7-alszgz5dfc.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/edit#[.{fingerprint=alszgz5dfc}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/edit.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "h9w2ncq981",
+      "Integrity": "1RaDWvHF5pxUqx9J2FJn1EKFwN7fXCbnro9i+VDVD2I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/edit.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/qeqtehk7rp-sfwirl8sxp.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/export#[.{fingerprint=sfwirl8sxp}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/export.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ug4a36r261",
+      "Integrity": "HiBBjMbDCKh87IH/XQgpBQlNu0ROFg92ZQsV39m5d84=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/export.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/tjhbznbncc-toaib259bz.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "css/app.min#[.{fingerprint=toaib259bz}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "z9k6ydamvy",
+      "Integrity": "J4INCruGCY1BPyuGusqCbkGHFrmYqN5ubaWWkjxnxeY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.min.css"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/uazh7xad3k-8uu8yejyu5.gz",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/split#[.{fingerprint=8uu8yejyu5}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/split.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "7cybl4by21",
+      "Integrity": "aYjScXDAxDziwBiUmCmQH7FPRwiHoSHs3i3k5mhWyAU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/split.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/app.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "app#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fyz8ggyjbm",
+      "Integrity": "B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.css",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nozntlolh9",
+      "Integrity": "mXpOAue4vZztzTQG2SBmD+fSEeSGoJZt1GqRFY1mFMU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/app.css"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.min.css",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "css/app.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "toaib259bz",
+      "Integrity": "YzaRrwEQOZX7sAuo8h93Uxi9/Z5bnPJv/Gz47HRDJtE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/app.min.css"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/delete.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/delete#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vk50h69gp6",
+      "Integrity": "wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/delete.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/edit.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/edit#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "alszgz5dfc",
+      "Integrity": "fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/edit.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/export.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/export#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sfwirl8sxp",
+      "Integrity": "uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/export.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/login.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/login#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6i2y5pqo38",
+      "Integrity": "0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/login.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/new.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/new#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q77i65r7gj",
+      "Integrity": "Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/new.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/split.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/split#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8uu8yejyu5",
+      "Integrity": "4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/split.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/images/default-avatar.jpg",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "images/default-avatar#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1viyhg0gpn",
+      "Integrity": "/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/default-avatar.jpg"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/js/file-download.js",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "js/file-download#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ntexl2045w",
+      "Integrity": "S0alzE3KUD9xn6e/k2Hu6P4qgfwHXTx/4y52rfNXjNE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/file-download.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.fyz8ggyjbm.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/gmokrpsg0g-fyz8ggyjbm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000411522634"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2429"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3in3zA1yX9UnG+tI+1os2k7TFimc+Eor2ICf0OW5LEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:09:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fyz8ggyjbm"
+        },
+        {
+          "Name": "label",
+          "Value": "app.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ="
+        }
+      ]
+    },
+    {
+      "Route": "app.fyz8ggyjbm.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/app.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:09:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fyz8ggyjbm"
+        },
+        {
+          "Name": "label",
+          "Value": "app.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ="
+        }
+      ]
+    },
+    {
+      "Route": "app.fyz8ggyjbm.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/gmokrpsg0g-fyz8ggyjbm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3in3zA1yX9UnG+tI+1os2k7TFimc+Eor2ICf0OW5LEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:09:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fyz8ggyjbm"
+        },
+        {
+          "Name": "label",
+          "Value": "app.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3in3zA1yX9UnG+tI+1os2k7TFimc+Eor2ICf0OW5LEI="
+        }
+      ]
+    },
+    {
+      "Route": "app.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/gmokrpsg0g-fyz8ggyjbm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000411522634"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2429"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3in3zA1yX9UnG+tI+1os2k7TFimc+Eor2ICf0OW5LEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:09:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ="
+        }
+      ]
+    },
+    {
+      "Route": "app.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/app.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:09:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ="
+        }
+      ]
+    },
+    {
+      "Route": "app.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/gmokrpsg0g-fyz8ggyjbm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3in3zA1yX9UnG+tI+1os2k7TFimc+Eor2ICf0OW5LEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:09:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3in3zA1yX9UnG+tI+1os2k7TFimc+Eor2ICf0OW5LEI="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/ejro1r6idx-nozntlolh9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000369822485"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2703"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EYzbh7tcg7T9uOrHDEGGnAwn8Holxt3FCk3S323B3hw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mXpOAue4vZztzTQG2SBmD+fSEeSGoJZt1GqRFY1mFMU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mXpOAue4vZztzTQG2SBmD+fSEeSGoJZt1GqRFY1mFMU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mXpOAue4vZztzTQG2SBmD+fSEeSGoJZt1GqRFY1mFMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mXpOAue4vZztzTQG2SBmD+fSEeSGoJZt1GqRFY1mFMU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/ejro1r6idx-nozntlolh9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2703"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EYzbh7tcg7T9uOrHDEGGnAwn8Holxt3FCk3S323B3hw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EYzbh7tcg7T9uOrHDEGGnAwn8Holxt3FCk3S323B3hw="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.min.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/tjhbznbncc-toaib259bz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000129065565"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7747"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J4INCruGCY1BPyuGusqCbkGHFrmYqN5ubaWWkjxnxeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YzaRrwEQOZX7sAuo8h93Uxi9/Z5bnPJv/Gz47HRDJtE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YzaRrwEQOZX7sAuo8h93Uxi9/Z5bnPJv/Gz47HRDJtE="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.min.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YzaRrwEQOZX7sAuo8h93Uxi9/Z5bnPJv/Gz47HRDJtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YzaRrwEQOZX7sAuo8h93Uxi9/Z5bnPJv/Gz47HRDJtE="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.min.css.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/tjhbznbncc-toaib259bz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7747"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J4INCruGCY1BPyuGusqCbkGHFrmYqN5ubaWWkjxnxeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J4INCruGCY1BPyuGusqCbkGHFrmYqN5ubaWWkjxnxeY="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.min.toaib259bz.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/tjhbznbncc-toaib259bz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000129065565"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7747"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J4INCruGCY1BPyuGusqCbkGHFrmYqN5ubaWWkjxnxeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YzaRrwEQOZX7sAuo8h93Uxi9/Z5bnPJv/Gz47HRDJtE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "toaib259bz"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YzaRrwEQOZX7sAuo8h93Uxi9/Z5bnPJv/Gz47HRDJtE="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.min.toaib259bz.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YzaRrwEQOZX7sAuo8h93Uxi9/Z5bnPJv/Gz47HRDJtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "toaib259bz"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YzaRrwEQOZX7sAuo8h93Uxi9/Z5bnPJv/Gz47HRDJtE="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.min.toaib259bz.css.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/tjhbznbncc-toaib259bz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7747"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J4INCruGCY1BPyuGusqCbkGHFrmYqN5ubaWWkjxnxeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "toaib259bz"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.min.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J4INCruGCY1BPyuGusqCbkGHFrmYqN5ubaWWkjxnxeY="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.nozntlolh9.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/ejro1r6idx-nozntlolh9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000369822485"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2703"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EYzbh7tcg7T9uOrHDEGGnAwn8Holxt3FCk3S323B3hw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mXpOAue4vZztzTQG2SBmD+fSEeSGoJZt1GqRFY1mFMU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nozntlolh9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mXpOAue4vZztzTQG2SBmD+fSEeSGoJZt1GqRFY1mFMU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.nozntlolh9.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mXpOAue4vZztzTQG2SBmD+fSEeSGoJZt1GqRFY1mFMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nozntlolh9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mXpOAue4vZztzTQG2SBmD+fSEeSGoJZt1GqRFY1mFMU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.nozntlolh9.css.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/ejro1r6idx-nozntlolh9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2703"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EYzbh7tcg7T9uOrHDEGGnAwn8Holxt3FCk3S323B3hw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 04:36:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nozntlolh9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EYzbh7tcg7T9uOrHDEGGnAwn8Holxt3FCk3S323B3hw="
+        }
+      ]
+    },
+    {
+      "Route": "icons/delete.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/jisnfh1eho-vk50h69gp6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000027171698"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36802"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9PtRVH7ipUHiu7LQYR0ssyuq+Et4TfXdLvmiIrZMeLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y="
+        }
+      ]
+    },
+    {
+      "Route": "icons/delete.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/delete.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y="
+        }
+      ]
+    },
+    {
+      "Route": "icons/delete.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/jisnfh1eho-vk50h69gp6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9PtRVH7ipUHiu7LQYR0ssyuq+Et4TfXdLvmiIrZMeLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9PtRVH7ipUHiu7LQYR0ssyuq+Et4TfXdLvmiIrZMeLg="
+        }
+      ]
+    },
+    {
+      "Route": "icons/delete.vk50h69gp6.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/jisnfh1eho-vk50h69gp6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000027171698"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36802"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9PtRVH7ipUHiu7LQYR0ssyuq+Et4TfXdLvmiIrZMeLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk50h69gp6"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/delete.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y="
+        }
+      ]
+    },
+    {
+      "Route": "icons/delete.vk50h69gp6.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/delete.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk50h69gp6"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/delete.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y="
+        }
+      ]
+    },
+    {
+      "Route": "icons/delete.vk50h69gp6.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/jisnfh1eho-vk50h69gp6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9PtRVH7ipUHiu7LQYR0ssyuq+Et4TfXdLvmiIrZMeLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk50h69gp6"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/delete.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9PtRVH7ipUHiu7LQYR0ssyuq+Et4TfXdLvmiIrZMeLg="
+        }
+      ]
+    },
+    {
+      "Route": "icons/edit.alszgz5dfc.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/m67z9o7ws7-alszgz5dfc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000012484239"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80100"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1RaDWvHF5pxUqx9J2FJn1EKFwN7fXCbnro9i+VDVD2I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "alszgz5dfc"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/edit.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw="
+        }
+      ]
+    },
+    {
+      "Route": "icons/edit.alszgz5dfc.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/edit.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "alszgz5dfc"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/edit.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw="
+        }
+      ]
+    },
+    {
+      "Route": "icons/edit.alszgz5dfc.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/m67z9o7ws7-alszgz5dfc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1RaDWvHF5pxUqx9J2FJn1EKFwN7fXCbnro9i+VDVD2I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "alszgz5dfc"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/edit.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1RaDWvHF5pxUqx9J2FJn1EKFwN7fXCbnro9i+VDVD2I="
+        }
+      ]
+    },
+    {
+      "Route": "icons/edit.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/m67z9o7ws7-alszgz5dfc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000012484239"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80100"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1RaDWvHF5pxUqx9J2FJn1EKFwN7fXCbnro9i+VDVD2I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw="
+        }
+      ]
+    },
+    {
+      "Route": "icons/edit.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/edit.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw="
+        }
+      ]
+    },
+    {
+      "Route": "icons/edit.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/m67z9o7ws7-alszgz5dfc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1RaDWvHF5pxUqx9J2FJn1EKFwN7fXCbnro9i+VDVD2I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1RaDWvHF5pxUqx9J2FJn1EKFwN7fXCbnro9i+VDVD2I="
+        }
+      ]
+    },
+    {
+      "Route": "icons/export.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/qeqtehk7rp-sfwirl8sxp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000047780592"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20928"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HiBBjMbDCKh87IH/XQgpBQlNu0ROFg92ZQsV39m5d84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:31:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A="
+        }
+      ]
+    },
+    {
+      "Route": "icons/export.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/export.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:31:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A="
+        }
+      ]
+    },
+    {
+      "Route": "icons/export.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/qeqtehk7rp-sfwirl8sxp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HiBBjMbDCKh87IH/XQgpBQlNu0ROFg92ZQsV39m5d84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:31:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HiBBjMbDCKh87IH/XQgpBQlNu0ROFg92ZQsV39m5d84="
+        }
+      ]
+    },
+    {
+      "Route": "icons/export.sfwirl8sxp.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/qeqtehk7rp-sfwirl8sxp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000047780592"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20928"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HiBBjMbDCKh87IH/XQgpBQlNu0ROFg92ZQsV39m5d84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:31:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sfwirl8sxp"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/export.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A="
+        }
+      ]
+    },
+    {
+      "Route": "icons/export.sfwirl8sxp.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/export.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:31:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sfwirl8sxp"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/export.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A="
+        }
+      ]
+    },
+    {
+      "Route": "icons/export.sfwirl8sxp.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/qeqtehk7rp-sfwirl8sxp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HiBBjMbDCKh87IH/XQgpBQlNu0ROFg92ZQsV39m5d84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:31:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sfwirl8sxp"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/export.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HiBBjMbDCKh87IH/XQgpBQlNu0ROFg92ZQsV39m5d84="
+        }
+      ]
+    },
+    {
+      "Route": "icons/login.6i2y5pqo38.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/6mau52sh18-6i2y5pqo38.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000030223351"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33086"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Krs2FqOkL1QWH5ZYRwhF1VgNpMnnvSQPgwPwdRKvfbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6i2y5pqo38"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/login.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8="
+        }
+      ]
+    },
+    {
+      "Route": "icons/login.6i2y5pqo38.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/login.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6i2y5pqo38"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/login.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8="
+        }
+      ]
+    },
+    {
+      "Route": "icons/login.6i2y5pqo38.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/6mau52sh18-6i2y5pqo38.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Krs2FqOkL1QWH5ZYRwhF1VgNpMnnvSQPgwPwdRKvfbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6i2y5pqo38"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/login.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Krs2FqOkL1QWH5ZYRwhF1VgNpMnnvSQPgwPwdRKvfbY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/login.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/6mau52sh18-6i2y5pqo38.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000030223351"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33086"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Krs2FqOkL1QWH5ZYRwhF1VgNpMnnvSQPgwPwdRKvfbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8="
+        }
+      ]
+    },
+    {
+      "Route": "icons/login.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/login.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8="
+        }
+      ]
+    },
+    {
+      "Route": "icons/login.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/6mau52sh18-6i2y5pqo38.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Krs2FqOkL1QWH5ZYRwhF1VgNpMnnvSQPgwPwdRKvfbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Krs2FqOkL1QWH5ZYRwhF1VgNpMnnvSQPgwPwdRKvfbY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/new.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/i75fci5sok-q77i65r7gj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000039257253"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25472"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aoJ/pPyabeRj8N0OAJLuUSc5NT0DYSOqLRhvI7F4JAk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE="
+        }
+      ]
+    },
+    {
+      "Route": "icons/new.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/new.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE="
+        }
+      ]
+    },
+    {
+      "Route": "icons/new.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/i75fci5sok-q77i65r7gj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aoJ/pPyabeRj8N0OAJLuUSc5NT0DYSOqLRhvI7F4JAk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aoJ/pPyabeRj8N0OAJLuUSc5NT0DYSOqLRhvI7F4JAk="
+        }
+      ]
+    },
+    {
+      "Route": "icons/new.q77i65r7gj.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/i75fci5sok-q77i65r7gj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000039257253"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25472"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aoJ/pPyabeRj8N0OAJLuUSc5NT0DYSOqLRhvI7F4JAk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q77i65r7gj"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/new.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE="
+        }
+      ]
+    },
+    {
+      "Route": "icons/new.q77i65r7gj.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/new.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q77i65r7gj"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/new.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE="
+        }
+      ]
+    },
+    {
+      "Route": "icons/new.q77i65r7gj.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/i75fci5sok-q77i65r7gj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aoJ/pPyabeRj8N0OAJLuUSc5NT0DYSOqLRhvI7F4JAk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q77i65r7gj"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/new.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aoJ/pPyabeRj8N0OAJLuUSc5NT0DYSOqLRhvI7F4JAk="
+        }
+      ]
+    },
+    {
+      "Route": "icons/split.8uu8yejyu5.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/uazh7xad3k-8uu8yejyu5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000145180023"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6887"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aYjScXDAxDziwBiUmCmQH7FPRwiHoSHs3i3k5mhWyAU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 01:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8uu8yejyu5"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/split.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60="
+        }
+      ]
+    },
+    {
+      "Route": "icons/split.8uu8yejyu5.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/split.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 01:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8uu8yejyu5"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/split.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60="
+        }
+      ]
+    },
+    {
+      "Route": "icons/split.8uu8yejyu5.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/uazh7xad3k-8uu8yejyu5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6887"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aYjScXDAxDziwBiUmCmQH7FPRwiHoSHs3i3k5mhWyAU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 01:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8uu8yejyu5"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/split.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aYjScXDAxDziwBiUmCmQH7FPRwiHoSHs3i3k5mhWyAU="
+        }
+      ]
+    },
+    {
+      "Route": "icons/split.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/uazh7xad3k-8uu8yejyu5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000145180023"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6887"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aYjScXDAxDziwBiUmCmQH7FPRwiHoSHs3i3k5mhWyAU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 01:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60="
+        }
+      ]
+    },
+    {
+      "Route": "icons/split.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/split.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 01:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60="
+        }
+      ]
+    },
+    {
+      "Route": "icons/split.ico.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/uazh7xad3k-8uu8yejyu5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6887"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aYjScXDAxDziwBiUmCmQH7FPRwiHoSHs3i3k5mhWyAU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 01:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aYjScXDAxDziwBiUmCmQH7FPRwiHoSHs3i3k5mhWyAU="
+        }
+      ]
+    },
+    {
+      "Route": "images/default-avatar.1viyhg0gpn.jpg",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/images/default-avatar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 05:43:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1viyhg0gpn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/default-avatar.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg="
+        }
+      ]
+    },
+    {
+      "Route": "images/default-avatar.jpg",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/images/default-avatar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 05:43:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg="
+        }
+      ]
+    },
+    {
+      "Route": "js/file-download.js",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/0lipfab5a1-ntexl2045w.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004608294931"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bf8Ng1RjYBJUsgd1ZiFW0aKD/fSJOuzpz/N1JXySbBk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 07:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"S0alzE3KUD9xn6e/k2Hu6P4qgfwHXTx/4y52rfNXjNE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S0alzE3KUD9xn6e/k2Hu6P4qgfwHXTx/4y52rfNXjNE="
+        }
+      ]
+    },
+    {
+      "Route": "js/file-download.js",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/js/file-download.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "324"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S0alzE3KUD9xn6e/k2Hu6P4qgfwHXTx/4y52rfNXjNE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 07:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S0alzE3KUD9xn6e/k2Hu6P4qgfwHXTx/4y52rfNXjNE="
+        }
+      ]
+    },
+    {
+      "Route": "js/file-download.js.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/0lipfab5a1-ntexl2045w.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bf8Ng1RjYBJUsgd1ZiFW0aKD/fSJOuzpz/N1JXySbBk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 07:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bf8Ng1RjYBJUsgd1ZiFW0aKD/fSJOuzpz/N1JXySbBk="
+        }
+      ]
+    },
+    {
+      "Route": "js/file-download.ntexl2045w.js",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/0lipfab5a1-ntexl2045w.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004608294931"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bf8Ng1RjYBJUsgd1ZiFW0aKD/fSJOuzpz/N1JXySbBk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 07:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"S0alzE3KUD9xn6e/k2Hu6P4qgfwHXTx/4y52rfNXjNE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ntexl2045w"
+        },
+        {
+          "Name": "label",
+          "Value": "js/file-download.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S0alzE3KUD9xn6e/k2Hu6P4qgfwHXTx/4y52rfNXjNE="
+        }
+      ]
+    },
+    {
+      "Route": "js/file-download.ntexl2045w.js",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/js/file-download.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "324"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S0alzE3KUD9xn6e/k2Hu6P4qgfwHXTx/4y52rfNXjNE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 07:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ntexl2045w"
+        },
+        {
+          "Name": "label",
+          "Value": "js/file-download.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S0alzE3KUD9xn6e/k2Hu6P4qgfwHXTx/4y52rfNXjNE="
+        }
+      ]
+    },
+    {
+      "Route": "js/file-download.ntexl2045w.js.gz",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/obj/Debug/net9.0/compressed/0lipfab5a1-ntexl2045w.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bf8Ng1RjYBJUsgd1ZiFW0aKD/fSJOuzpz/N1JXySbBk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 07:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ntexl2045w"
+        },
+        {
+          "Name": "label",
+          "Value": "js/file-download.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bf8Ng1RjYBJUsgd1ZiFW0aKD/fSJOuzpz/N1JXySbBk="
+        }
+      ]
+    }
+  ]
+}

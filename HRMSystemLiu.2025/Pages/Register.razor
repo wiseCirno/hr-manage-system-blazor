@@ -1,0 +1,101 @@
+@layout LoginLayout
+@page "/register"
+@using HRMSystemLiu.BLL
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+<PageTitle>HRMSystem WebClient - Register</PageTitle>
+
+<h2 class="neko-init-title">Welcome to HRMS</h2>
+<EditForm Model="_registerUser" OnValidSubmit="RegisterAsync" FormName="RegisterForm">
+    <!-- Username -->
+    <div class="neko-init-form-group">
+        <InputText class="neko-init-form-control" @bind-Value="_registerUser.UserName" placeholder="Username"/>
+    </div>
+    <!-- Password -->
+    <div class="neko-init-form-group">
+        <InputText class="neko-init-form-control" type="password" @bind-Value="_registerUser.Password"
+                   placeholder="Password"/>
+    </div>
+    <!-- Confirm Password -->
+    <div class="neko-init-form-group">
+        <InputText class="neko-init-form-control" type="password" @bind-Value="_confirmedPassword"
+                   placeholder="Confirm password"/>
+    </div>
+    <!-- Real Name -->
+    <div class="neko-init-form-group">
+        <InputText class="neko-init-form-control" @bind-Value="_registerUser.RealName" placeholder="Real name"/>
+    </div>
+    <!-- Error message -->
+    @if (!string.IsNullOrEmpty(_errorMessage))
+    {
+        <div class="neko-init-alert neko-init-alert-danger mt-2">
+            @_errorMessage
+        </div>
+    }
+    <!-- Submit button -->
+    <div class="neko-init-button-group">
+        <button type="submit" class="neko-init-btn neko-init-btn-primary">Continue</button>
+    </div>
+</EditForm>
+<!-- Section for navigation -->
+<div class="neko-init-register-section">
+    <span>Already have an account？</span>
+    <button class="neko-init-btn neko-init-btn-secondary" @onclick="NavigateToLogin">Log in</button>
+</div>
+
+@code {
+    private string? _confirmedPassword;
+    private readonly RegisterUser _registerUser = new();
+    private string _errorMessage = string.Empty;
+
+    private async Task RegisterAsync()
+    {
+        if (string.IsNullOrWhiteSpace(_registerUser.UserName))
+        {
+            _errorMessage = "Username cannot be empty.";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(_registerUser.Password))
+        {
+            _errorMessage = "Password cannot be empty.";
+            return;
+        }
+
+        if (_registerUser.Password != _confirmedPassword)
+        {
+            _errorMessage = "The confirmed password does not match the password.";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(_registerUser.RealName))
+        {
+            _errorMessage = "Real name cannot be empty.";
+            return;
+        }
+
+        var registerResult = await _registerUser.Register();
+        switch (registerResult)
+        {
+            case RegisterType.Existed:
+                _errorMessage = "The username already exists.";
+                break;
+            case RegisterType.Failed:
+                _errorMessage = "Registration failed. Please try again later.";
+                break;
+            case RegisterType.Success:
+                NavigationManager.NavigateTo("/test");
+                break;
+            default:
+                _errorMessage = "An unexpected error occurred. Please try again later.";
+                break;
+        }
+    }
+
+    private void NavigateToLogin()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+
+}

@@ -1,0 +1,547 @@
+@page "/employees"
+@using HRMSystemLiu.Model.Web
+@rendermode InteractiveServer
+@inject IJSRuntime Js
+@{
+    _helper.LoadCurrentPanelDataAsync = PanelInit;
+    _jsRuntime = Js;
+}
+
+<PageTitle>HRMS - Employee</PageTitle>
+<header class="settings-page__header">
+    Employee Management
+</header>
+<div class="flex flex-col md:flex-row flex-1">
+    @* SideBar *@
+    <aside class="sidebar">
+        <nav class="sidebar__menu">
+            <div class="sidebar__item @(_helper.IsActivePanel("general") ? "active" : "")"
+                 style="cursor: pointer;"
+                 @onclick='() => SwitchPanel("general")'>
+                <span class="sidebar__item-text">
+                    General
+                </span>
+            </div>
+            <div class="sidebar__item @(_helper.IsActivePanel("manage") ? "active" : "")"
+                 style="cursor: pointer;"
+                 @onclick='() => SwitchPanel("manage")'>
+                <span class="sidebar__item-text">
+                    Manage
+                </span>
+            </div>
+        </nav>
+    </aside>
+    @* Settings Body *@
+    <main class="settings-page__body">
+        @switch (_helper.ActivePanel)
+        {
+            case "general":
+                @* Overview *@
+                <div class="card card-default">
+                    <header class="card__title">
+                        Overview
+                    </header>
+                    <p class="card__description">
+                        Basic employee info in HRMSystem
+                    </p>
+                    <div class="table__container">
+                        @_helper.RenderTable(_employeeTable)
+                    </div>
+                    <div class="input-group">
+                        @* Name *@
+                        <div class="input-group__item">
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox"
+                                       @bind="_nameSearch.FilterEnabled"
+                                       @bind:after="OnSearchEmployeeFocus"
+                                       class="checkbox"/>
+                                <span>@_nameSearch.Label</span>
+                            </label>
+                            <InputText
+                                id="employee-search"
+                                class="@(_nameSearch.HasError ? "input-field error" : "input-field")"
+                                @onfocus="OnSearchEmployeeFocus"
+                                @bind-Value="_nameSearch.BindValue"
+                                disabled="@(!_nameSearch.FilterEnabled)"/>
+                            @if (_nameSearch.HasError)
+                            {
+                                <div class="input-field__error-text">@_nameSearch.ErrorMessage</div>
+                            }
+                        </div>
+                        @* Department *@
+                        <div class="input-group__item">
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox"
+                                       @bind="_departmentSearch.FilterEnabled"
+                                       class="checkbox"/>
+                                <span>@_departmentSearch.Label</span>
+                            </label>
+                            <InputSelect
+                                id="department-search"
+                                class="input-field"
+                                @bind-Value="_departmentSearch.BindValue"
+                                disabled="@(!_departmentSearch.FilterEnabled)">
+                                @foreach (var item in _departmentList)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        @* Date From *@
+                        <div class="input-group__item">
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" @bind="_dateFromSearch.FilterEnabled" class="checkbox"/>
+                                <span>@_dateFromSearch.Label</span>
+                            </label>
+                            <InputDate
+                                id="from-date-search"
+                                class="input-field"
+                                @bind-Value="_dateFromSearch.BindValue"
+                                disabled="@(!_dateFromSearch.FilterEnabled)"/>
+                        </div>
+                        @* Date To *@
+                        <div class="input-group__item">
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox"
+                                       @bind="_dateToSearch.FilterEnabled"
+                                       class="checkbox"/>
+                                <span>@_dateToSearch.Label</span>
+                            </label>
+                            <InputDate
+                                id="to-date-search"
+                                class="@(_dateToSearch.HasError ? "input-field error" : "input-field")"
+                                @onfocus="OnSearchEmployeeFocus"
+                                @bind-Value="_dateToSearch.BindValue"
+                                disabled="@(!_dateToSearch.FilterEnabled)"/>
+                            @if (_dateToSearch.HasError)
+                            {
+                                <div class="input-field__error-text">@_dateToSearch.ErrorMessage</div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <p class="card__footer-text">
+                        Add constraints to reduce the range
+                    </p>
+                    <div class="card__actions">
+                        <button class="btn btn-primary"
+                                @onclick="FilterEmployeeAsync"
+                                disabled="@(!(_departmentSearch.FilterEnabled || _nameSearch.FilterEnabled ||
+                                              _dateToSearch.FilterEnabled || _dateFromSearch.FilterEnabled))">
+                            Filter
+                        </button>
+                        <button class="btn btn-primary"
+                                @onclick="LoadEmployeeAsync">
+                            Show All
+                        </button>
+                    </div>
+                </div>
+                @* New Employee *@
+                <div class="card card-default">
+                    <header class="card__title">
+                        New Employee
+                    </header>
+                    <p class="card__description">
+                        Add a new employee to the corporation.
+                    </p>
+                    @* Image *@
+                    <div class="avatar-upload">
+                        <InputFile OnChange="@(e => AvatarHandler(e, _newEmployee))" accept="image/*" class="hidden"
+                                   id="avatar-input"/>
+                        <label for="avatar-input" class="avatar-preview cursor-pointer">
+                            <img src="@_avatarUrl" alt="Avatar"/>
+                            <span class="avatar-overlay">Change Photo</span>
+                        </label>
+                    </div>
+                    @* Text *@
+                    <div class="input-group">
+                        <!-- 姓名 -->
+                        <div class="input-group__item">
+                            <label>Name*</label>
+                            <InputText class="input-field" @bind-Value="_newEmployee.Name" placeholder="e.g. 张三"/>
+                        </div>
+                        <!-- 工号 -->
+                        <div class="input-group__item">
+                            <label>Work Number*</label>
+                            <InputText class="input-field" @bind-Value="_newEmployee.WorkNo"
+                                       placeholder="e.g. EMP0001"/>
+                        </div>
+                        <!-- 邮箱 -->
+                        <div class="input-group__item">
+                            <label>Email*</label>
+                            <InputText class="input-field" @bind-Value="_newEmployee.Email"
+                                       placeholder="e.g. abc&#64;example.com"/>
+                        </div>
+                        <!-- 电话 -->
+                        <div class="input-group__item">
+                            <label>Phone*</label>
+                            <InputText class="input-field" @bind-Value="_newEmployee.Telephone"
+                                       placeholder="e.g. 12345678910"/>
+                        </div>
+                        <!-- 地址 -->
+                        <div class="input-group__item">
+                            <label>Address*</label>
+                            <InputText class="input-field" @bind-Value="_newEmployee.Address"
+                                       placeholder="e.g. 上海市徐汇区宛平南路600号"/>
+                        </div>
+                        <!-- 籍贯 -->
+                        <div class="input-group__item">
+                            <label>Native Home*</label>
+                            <InputText class="input-field" @bind-Value="_newEmployee.NativePlace"
+                                       placeholder="e.g. 上海"/>
+                        </div>
+                    </div>
+                    @* Paragraph *@
+                    <div class="input-group">
+                        <!-- 简历 -->
+                        <div class="input-group__item">
+                            <label>Resume*</label>
+                            <InputTextArea class="input-field" @bind-Value="_newEmployee.Resume"/>
+                        </div>
+                        <!-- 备注 -->
+                        <div class="input-group__item">
+                            <label>Remarks</label>
+                            <InputTextArea class="input-field" @bind-Value="_newEmployee.Remarks"/>
+                        </div>
+                    </div>
+                    @* Select *@
+                    <div class="input-group">
+                        <!-- 民族 -->
+                        <div class="input-group__item">
+                            <label>Nation*</label>
+                            <InputSelect class="input-field" @bind-Value="_newEmployee.Nation">
+                                <option value="@string.Empty">-- Select --</option>
+                                @foreach (var item in ConstProperty.NationList)
+                                {
+                                    <option value="@item">@item</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 部门 -->
+                        <div class="input-group__item">
+                            <label>Department*</label>
+                            <InputSelect class="input-field" @bind-Value="_newEmployee.DepartmentId">
+                                <option value="@Guid.Empty">-- Select --</option>
+                                @foreach (var item in _departmentList)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 婚姻情况 -->
+                        <div class="input-group__item">
+                            <label>Marital Status*</label>
+                            <InputSelect class="input-field" @bind-Value="_newEmployee.MarriageId">
+                                <option value="@Guid.Empty">-- Select --</option>
+                                @foreach (var item in _employeeIdList.MarriageIdDictionary)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 教育情况 -->
+                        <div class="input-group__item">
+                            <label>Education*</label>
+                            <InputSelect class="input-field" @bind-Value="_newEmployee.EducationId">
+                                <option value="@Guid.Empty">-- Select --</option>
+                                @foreach (var item in _employeeIdList.EducationIdDictionary)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 政治面貌 -->
+                        <div class="input-group__item">
+                            <label>Party*</label>
+                            <InputSelect class="input-field" @bind-Value="_newEmployee.PartyId">
+                                <option value="@Guid.Empty">-- Select --</option>
+                                @foreach (var item in _employeeIdList.PartyIdDictionary)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 性别 -->
+                        <div class="input-group__item">
+                            <label>Gender*</label>
+                            <InputSelect class="input-field" @bind-Value="_newEmployee.GenderId">
+                                <option value="@Guid.Empty">-- Select --</option>
+                                @foreach (var item in _employeeIdList.GenderIdDictionary)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 生日 -->
+                        <div class="input-group__item">
+                            <label>Birthday*</label>
+                            <InputDate class="input-field" @bind-Value="_newEmployee.Birthday"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <p class="card__footer-text">
+                        Make sure required fields are filled with correct information.
+                    </p>
+                    <div class="card__actions">
+                        <button class="btn btn-primary"
+                                @onclick="AddEmployeeAsync"
+                                disabled="@(!_newEmployee.IsValid())">
+                            Add
+                        </button>
+                    </div>
+                </div>
+                @* Export *@
+                <div class="card card-default">
+                    <header class="card__title">
+                        Export
+                    </header>
+                    <p class="card__description">
+                        Export employee info based on you current filter state into csv file.
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <div class="card__actions">
+                        <button class="btn btn-primary" @onclick="ExportEmployeeAsync">
+                            Export
+                        </button>
+                    </div>
+                </div>
+                break;
+            case "manage":
+                @* Overview *@
+                <div class="card card-simple">
+                    <header class="card__title">
+                        Overview
+                    </header>
+                    <p class="card__description">
+                        You can select an employee and edit the information.
+                    </p>
+                    <div class="grid-group__container">
+                        <div class="grid-group">
+                            @if (_employeesLite == null)
+                            {
+                                <div class="card__loading-overlay">
+                                    <div class="card__loading-overlay-text">
+                                        Loading...
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                foreach (var e in _employeesLite)
+                                {
+                                    <div class="grid-group__item @(_selectedEmployeeId == e.Id ? "active" : "")"
+                                         @onclick="() => OnEmployeeSelected(e.Id)">
+                                        @($"{e.Name} {e.WorkNo}")
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+                @* Avatar *@
+                <div class="card card-default">
+                    <header class="card__title">
+                        Avatar
+                    </header>
+                    <div class="avatar-upload">
+                        <InputFile OnChange="@(e => AvatarHandler(e, _editedEmployee, true))"
+                                   accept="image/*"
+                                   class="hidden"
+                                   id="avatar-input"/>
+                        <label for="avatar-input" class="avatar-preview cursor-pointer">
+                            <img src="@_avatarUrl" alt="Avatar"/>
+                            <span class="avatar-overlay">Change Photo</span>
+                        </label>
+                    </div>
+                    <p class="card__description">
+                        This is the employee's avatar.
+                        Click on the avatar to upload a custom one from your files.
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <p class="card__footer-text">
+                        An avatar is optional but strongly recommended.
+                    </p>
+                </div>
+                @* Basic Information *@
+                <div class="card card-default">
+                    <header class="card__title">
+                        Basic Information
+                    </header>
+                    <p class="card__description">
+                        In actually, the information has no need to change unless there is a special need.
+                    </p>
+                    <div class="input-group">
+                        <!-- 姓名 -->
+                        <div class="input-group__item">
+                            <label>Name</label>
+                            <InputText class="input-field" @bind-Value="_editedEmployee.Name"/>
+                        </div>
+                        <!-- 工号 -->
+                        <div class="input-group__item">
+                            <label>Work Number</label>
+                            <InputText class="input-field" @bind-Value="_editedEmployee.WorkNo"/>
+                        </div>
+                        <!-- 邮箱 -->
+                        <div class="input-group__item">
+                            <label>Email</label>
+                            <InputText class="input-field" @bind-Value="_editedEmployee.Email"/>
+                        </div>
+                        <!-- 电话 -->
+                        <div class="input-group__item">
+                            <label>Phone</label>
+                            <InputText class="input-field" @bind-Value="_editedEmployee.Telephone"/>
+                        </div>
+                        <!-- 地址 -->
+                        <div class="input-group__item">
+                            <label>Address</label>
+                            <InputText class="input-field" @bind-Value="_editedEmployee.Address"/>
+                        </div>
+                        <!-- 籍贯 -->
+                        <div class="input-group__item">
+                            <label>Native Home</label>
+                            <InputText class="input-field" @bind-Value="_editedEmployee.NativePlace"/>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <!-- 民族 -->
+                        <div class="input-group__item">
+                            <label>Nation</label>
+                            <InputSelect class="input-field" @bind-Value="_editedEmployee.Nation">
+                                @foreach (var item in ConstProperty.NationList)
+                                {
+                                    <option value="@item">@item</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 部门 -->
+                        <div class="input-group__item">
+                            <label>Department</label>
+                            <InputSelect class="input-field" @bind-Value="_editedEmployee.DepartmentId">
+                                @foreach (var item in _departmentList)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 婚姻情况 -->
+                        <div class="input-group__item">
+                            <label>Marital Status</label>
+                            <InputSelect class="input-field" @bind-Value="_editedEmployee.MarriageId">
+                                @foreach (var item in _employeeIdList.MarriageIdDictionary)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 教育情况 -->
+                        <div class="input-group__item">
+                            <label>Education</label>
+                            <InputSelect class="input-field" @bind-Value="_editedEmployee.EducationId">
+                                @foreach (var item in _employeeIdList.EducationIdDictionary)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 政治面貌 -->
+                        <div class="input-group__item">
+                            <label>Party</label>
+                            <InputSelect class="input-field" @bind-Value="_editedEmployee.PartyId">
+                                @foreach (var item in _employeeIdList.PartyIdDictionary)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 性别 -->
+                        <div class="input-group__item">
+                            <label>Gender</label>
+                            <InputSelect class="input-field" @bind-Value="_editedEmployee.GenderId">
+                                @foreach (var item in _employeeIdList.GenderIdDictionary)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <!-- 生日 -->
+                        <div class="input-group__item">
+                            <label>Birthday</label>
+                            <InputDate class="input-field" @bind-Value="_editedEmployee.Birthday"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <p class="card__footer-text">
+                        Make sure what you changed has correct format.
+                    </p>
+                    <div class="card__actions">
+                        <button
+                            class="@(_updateInfoFunctionalButton.StateChanged ? "btn btn-success" : "btn btn-primary")"
+                            onclick="@(() => ModifyEmployeeAsync(_updateInfoFunctionalButton))"
+                            disabled="@(string.IsNullOrEmpty(_editedEmployee.Name))">
+                            @(_updateInfoFunctionalButton.StateChanged ? _updateInfoFunctionalButton.StateChangedName : _updateInfoFunctionalButton.Name)
+                        </button>
+                    </div>
+                </div>
+                @* Resume & Remark *@
+                <div class="card card-default">
+                    <header class="card__title">
+                        Resume & Remark
+                    </header>
+                    <p class="card__description">
+                        You can edit the employee's resume and remark.
+                    </p>
+                    <div class="input-group">
+                        <!-- 简历 -->
+                        <div class="input-group__item">
+                            <label>Resume</label>
+                            <InputTextArea class="input-field" @bind-Value="_editedEmployee.Resume"/>
+                        </div>
+                        <!-- 备注 -->
+                        <div class="input-group__item">
+                            <label>Remarks</label>
+                            <InputTextArea class="input-field" @bind-Value="_editedEmployee.Remarks"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <div class="card__actions">
+                        <button
+                            class="@(_updateResumeRemarkFunctionalButton.StateChanged ? "btn btn-success" : "btn btn-primary")"
+                            onclick="@(() => ModifyEmployeeAsync(_updateResumeRemarkFunctionalButton))"
+                            disabled="@(string.IsNullOrEmpty(_editedEmployee.Name))">
+                            @(_updateResumeRemarkFunctionalButton.StateChanged ? _updateResumeRemarkFunctionalButton.StateChangedName : _updateResumeRemarkFunctionalButton.Name)
+                        </button>
+                    </div>
+                </div>
+                @* Delete *@
+                <div class="card card-error">
+                    <header class="card__title">
+                        Delete
+                    </header>
+                    <p class="card__description">
+                        Delete selected employee from this corporation.
+                    </p>
+                </div>
+                <div class="card__footer error">
+                    <p class="card__footer-text error">
+                        Confirm you really want to delete this employee.
+                    </p>
+                    <div class="card__actions">
+                        <button class="btn btn-danger"
+                                @onclick="DeleteEmployeeAsync"
+                                disabled="@(_selectedEmployeeId == Guid.Empty)">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+                break;
+        }
+    </main>
+</div>

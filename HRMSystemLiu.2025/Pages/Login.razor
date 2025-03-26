@@ -1,0 +1,84 @@
+@layout LoginLayout
+@page "/login"
+@using HRMSystemLiu.BLL
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+<PageTitle>HRMSystem WebClient - Login</PageTitle>
+
+<h2 class="neko-init-title">Log in to HRMS</h2>
+<EditForm Model="_loginUser" OnValidSubmit="LoginAsync" FormName="LoginForm">
+    
+    <!-- Username -->
+    <div class="neko-init-form-group">
+        <InputText class="neko-init-form-control" @bind-Value="_loginUser.UserName" placeholder="Username"/>
+    </div>
+    <!-- Password -->
+    <div class="neko-init-form-group">
+        <InputText type="password" class="neko-init-form-control" @bind-Value="_loginUser.Password"
+                   placeholder="Password"/>
+    </div>
+    <!-- Forgot Password -->
+    <div class="neko-init-link-section">
+        <a href="/forgot-password">Forgot Password?</a>
+    </div>
+    <!-- Error message -->
+    @if (!string.IsNullOrEmpty(_errorMessage))
+    {
+        <div class="neko-init-alert neko-init-alert-danger mt-2">
+            @_errorMessage
+        </div>
+    }
+    <!-- Submit button -->
+    <div class="neko-init-button-group">
+        <button type="submit" class="neko-init-btn neko-init-btn-primary">Sign in</button>
+    </div>
+</EditForm>
+<!-- Register -->
+<div class="neko-init-register-section">
+    <span>Don't have an account?</span>
+    <button class="neko-init-btn neko-init-btn-secondary" @onclick="NavigateToRegister">Sign up</button>
+</div>
+
+@code {
+    private readonly LoginUser _loginUser = new();
+    private string _errorMessage = string.Empty;
+    
+    private async Task LoginAsync()
+    {
+        if (string.IsNullOrWhiteSpace(_loginUser.UserName))
+        {
+            _errorMessage = "Username is required.";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(_loginUser.Password))
+        {
+            _errorMessage = "Password is required.";
+            return;
+        }
+
+        var loginType = await _loginUser.Login();
+        switch (loginType)
+        {
+            case LoginType.NotFound or LoginType.Deleted or LoginType.Locked or LoginType.Fail:
+                _errorMessage = loginType switch
+                {
+                    LoginType.NotFound => "User does not exist.",
+                    LoginType.Deleted => "This account has been deactivated.",
+                    LoginType.Locked => "This account is locked.",
+                    LoginType.Fail => "Login failed. Please verify your username and password.",
+                    _ => throw new ArgumentOutOfRangeException()
+                };
+                return;
+            case LoginType.Admin or LoginType.User:
+                NavigationManager.NavigateTo("/overview", forceLoad: true);
+                break;
+        }
+    }
+
+    private void NavigateToRegister()
+    {
+        NavigationManager.NavigateTo("/register", forceLoad: true);
+    }
+}

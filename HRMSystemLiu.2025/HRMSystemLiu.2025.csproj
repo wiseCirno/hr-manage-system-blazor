@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>HRMSystemLiu._2025</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\HRMSystemLiu.BLL\HRMSystemLiu.BLL.csproj"/>
+        <ProjectReference Include="..\HRMSystemLiu.DAL\HRMSystemLiu.DAL.csproj"/>
+        <ProjectReference Include="..\HRMSystemLiu.Model\HRMSystemLiu.Model.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <_ContentIncludedByDefault Remove="Components\Pages\ForgetPassword.razor"/>
+        <_ContentIncludedByDefault Remove="Components\Pages\Index.razor"/>
+        <_ContentIncludedByDefault Remove="Components\Pages\Login.razor"/>
+        <_ContentIncludedByDefault Remove="Components\Pages\Main.razor"/>
+        <_ContentIncludedByDefault Remove="Components\Pages\Register.razor"/>
+        <_ContentIncludedByDefault Remove="Components\Pages\Test.razor"/>
+        <_ContentIncludedByDefault Remove="Components\InputFormItem.razor" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="Shared\LoginLayout.razor"/>
+        <AdditionalFiles Include="Shared\MainLayout.razor"/>
+        <AdditionalFiles Include="Pages\ForgetPassword.razor"/>
+        <AdditionalFiles Include="Pages\Login.razor"/>
+        <AdditionalFiles Include="Pages\Register.razor"/>
+        <AdditionalFiles Include="Pages\Test.razor"/>
+    </ItemGroup>
+
+</Project>

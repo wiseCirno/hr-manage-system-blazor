@@ -1,0 +1,1155 @@
+{
+  "Version": 1,
+  "Hash": "F7IDS2tASwBxgLuR9wiSHVaVq2SIIueRg4Saj+Qx0EM=",
+  "Source": "HRMSystemLiu.2025",
+  "BasePath": "_content/HRMSystemLiu.2025",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HRMSystemLiu.2025/wwwroot",
+      "Source": "HRMSystemLiu.2025",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/app.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "app#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fyz8ggyjbm",
+      "Integrity": "B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.css",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bv93ttr1z1",
+      "Integrity": "Seo1n3Kpyn21UvLzeWQ2Ou/ZKBhHZYyzFwltam65Fws=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/app.css"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.min.css",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "css/app.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4renw0evat",
+      "Integrity": "kJXAzzFL8K7GOGFoSHD8GUhqd3cRo51Cwdonv1CD7bk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/app.min.css"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/favicon.png",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon.png"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/delete.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/delete#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vk50h69gp6",
+      "Integrity": "wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/delete.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/edit.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/edit#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "alszgz5dfc",
+      "Integrity": "fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/edit.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/export.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/export#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sfwirl8sxp",
+      "Integrity": "uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/export.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/login.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/login#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6i2y5pqo38",
+      "Integrity": "0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/login.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/new.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/new#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q77i65r7gj",
+      "Integrity": "Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/new.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/split.ico",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "icons/split#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8uu8yejyu5",
+      "Integrity": "4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/split.ico"
+    },
+    {
+      "Identity": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/images/placeholder-avatar.jpg",
+      "SourceId": "HRMSystemLiu.2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/",
+      "BasePath": "_content/HRMSystemLiu.2025",
+      "RelativePath": "images/placeholder-avatar#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1viyhg0gpn",
+      "Integrity": "/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/placeholder-avatar.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.fyz8ggyjbm.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/app.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:09:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fyz8ggyjbm"
+        },
+        {
+          "Name": "label",
+          "Value": "app.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ="
+        }
+      ]
+    },
+    {
+      "Route": "app.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/app.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:09:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B5jsnqAFUqcpHAW+aBb//3MK+U27IrpJLGA2gUOe6KQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.bv93ttr1z1.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9280"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Seo1n3Kpyn21UvLzeWQ2Ou/ZKBhHZYyzFwltam65Fws=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 05:46:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bv93ttr1z1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Seo1n3Kpyn21UvLzeWQ2Ou/ZKBhHZYyzFwltam65Fws="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9280"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Seo1n3Kpyn21UvLzeWQ2Ou/ZKBhHZYyzFwltam65Fws=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 05:46:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Seo1n3Kpyn21UvLzeWQ2Ou/ZKBhHZYyzFwltam65Fws="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.min.4renw0evat.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kJXAzzFL8K7GOGFoSHD8GUhqd3cRo51Cwdonv1CD7bk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 05:46:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4renw0evat"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kJXAzzFL8K7GOGFoSHD8GUhqd3cRo51Cwdonv1CD7bk="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.min.css",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/css/app.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kJXAzzFL8K7GOGFoSHD8GUhqd3cRo51Cwdonv1CD7bk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 05:46:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kJXAzzFL8K7GOGFoSHD8GUhqd3cRo51Cwdonv1CD7bk="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 06:16:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 06:16:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "icons/delete.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/delete.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y="
+        }
+      ]
+    },
+    {
+      "Route": "icons/delete.vk50h69gp6.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/delete.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk50h69gp6"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/delete.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wcrvvu8boln5xdCG/0bn2hOSg7mXV1huJM/UhEXI23Y="
+        }
+      ]
+    },
+    {
+      "Route": "icons/edit.alszgz5dfc.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/edit.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "alszgz5dfc"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/edit.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw="
+        }
+      ]
+    },
+    {
+      "Route": "icons/edit.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/edit.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fof767qmF+sSZej84+nXvMrIxpHg07r8tOQd2dvzlsw="
+        }
+      ]
+    },
+    {
+      "Route": "icons/export.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/export.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:31:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A="
+        }
+      ]
+    },
+    {
+      "Route": "icons/export.sfwirl8sxp.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/export.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:31:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sfwirl8sxp"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/export.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uGMtYBB1HdY4LFvnhz0keI0D2+uAjyaMbTfy3nOkp6A="
+        }
+      ]
+    },
+    {
+      "Route": "icons/login.6i2y5pqo38.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/login.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6i2y5pqo38"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/login.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8="
+        }
+      ]
+    },
+    {
+      "Route": "icons/login.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/login.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 02:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0vXs9C41bdOZMln7rsRWi7Z0cISRnQJnaVLXEcIFRh8="
+        }
+      ]
+    },
+    {
+      "Route": "icons/new.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/new.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE="
+        }
+      ]
+    },
+    {
+      "Route": "icons/new.q77i65r7gj.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/new.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q77i65r7gj"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/new.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bl8ib0QhGFUO3TGFNRKdAK168Xg6VTLG92RUl/9k7lE="
+        }
+      ]
+    },
+    {
+      "Route": "icons/split.8uu8yejyu5.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/split.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 01:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8uu8yejyu5"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/split.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60="
+        }
+      ]
+    },
+    {
+      "Route": "icons/split.ico",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/icons/split.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 01:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4KeIZ5pECeHjK1uXN/L3eLF+Ixe7Oc5JbECxMRp4e60="
+        }
+      ]
+    },
+    {
+      "Route": "images/placeholder-avatar.1viyhg0gpn.jpg",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/images/placeholder-avatar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 05:43:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1viyhg0gpn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/placeholder-avatar.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg="
+        }
+      ]
+    },
+    {
+      "Route": "images/placeholder-avatar.jpg",
+      "AssetFile": "/home/tairitsucat/RiderProjects/HRMSystemLiu.2025/HRMSystemLiu.2025/wwwroot/images/placeholder-avatar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 05:43:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/YSfOYch8kd9AUyL6eq/BGV3R2FX7SZyvl4K/1VRZBg="
+        }
+      ]
+    }
+  ]
+}

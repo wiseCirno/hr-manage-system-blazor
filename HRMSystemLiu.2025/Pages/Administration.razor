@@ -1,0 +1,161 @@
+@page "/administration"
+@rendermode InteractiveServer
+@{ _helper.LoadCurrentPanelDataAsync = PanelInit; }
+
+<PageTitle>HRMS - Administration</PageTitle>
+<header class="settings-page__header">
+    Administration
+</header>
+<div class="flex flex-col md:flex-row flex-1">
+    @* SideBar *@
+    <aside class="sidebar">
+        <nav class="sidebar__menu">
+            <div class="sidebar__item @(_helper.IsActivePanel("department") ? "active" : "")"
+                 style="cursor: pointer;"
+                 @onclick='() => SwitchPanel("department")'>
+                <span class="sidebar__item-text">
+                    Department
+                </span>
+            </div>
+            <div class="sidebar__item @(_helper.IsActivePanel("logs") ? "active" : "")"
+                 style="cursor: pointer;"
+                 @onclick='() => SwitchPanel("logs")'>
+                <span class="sidebar__item-text">
+                    Logs
+                </span>
+            </div>
+        </nav>
+    </aside>
+    @* Settings Body *@
+    <main class="settings-page__body">
+        @switch (_helper.ActivePanel)
+        {
+            case "department":
+                @* Overview *@
+                <div class="card card-simple">
+                    <header class="card__title">
+                        Overview
+                    </header>
+                    <p class="card__description">
+                        This includes all the departments in HRMSystem.
+                    </p>
+                    <div class="grid-group">
+                        @foreach (var department in _totalDepartments)
+                        {
+                            <div class="grid-group__item @(_selectedDepartments.Contains(department) ? "active" : "")"
+                                 @onclick="() => OnDepartmentSelected(department)">
+                                @department
+                            </div>
+                        }
+                    </div>
+                </div>
+                @* Create *@
+                <div class="card card-default">
+                    <header class="card__title">
+                        Create
+                    </header>
+                    <p class="card__description">
+                        Create a new department.
+                    </p>
+                    <div class="input-group">
+                        <div class="input-group__item">
+                            <InputText
+                                class="@(string.IsNullOrEmpty(_newDepartmentErr) ? "input-field" : "input-field error")"
+                                @onfocus="OnAddDepartmentFocused"
+                                @bind-Value="_newDepartment"/>
+                            @if (!string.IsNullOrEmpty(_newDepartmentErr))
+                            {
+                                <div class="input-field__error-text">@_newDepartmentErr</div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <div class="card__actions">
+                        <button class="btn btn-primary" @onclick="AddDepartmentAsync">
+                            Add
+                        </button>
+                    </div>
+                </div>
+                @* Delete *@
+                <div class="card card-error">
+                    <header class="card__title">
+                        Delete
+                    </header>
+                    <p class="card__description">
+                        Delete selected department(s) from Overview.
+                    </p>
+                </div>
+                <div class="card__footer error">
+                    <p class="card__footer-text error">
+                        At least one department should be selected
+                    </p>
+                    <div class="card__actions">
+                        <button
+                            class="btn btn-danger"
+                            @onclick="DeleteDepartmentAsync"
+                            disabled="@(_selectedDepartments.Length == 0)">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+                break;
+            case "logs":
+                @* Operation Log *@
+                <div class="card card-default">
+                    <header class="card__title">
+                        Operation Log
+                    </header>
+                    <p class="card__description">
+                        Currently only contains users login actions.
+                    </p>
+                    <div class="table__container">
+                        <table class="table">
+                            @_helper.RenderTable(_logTable)
+                        </table>
+                    </div>
+                    <div class="table__caption">
+                        Page @_logCurrentPage of @_logTotalPages
+                    </div>
+                    <div class="filter-bar">
+                        <span class="filter-bar__label">
+                        How many rows per page
+                        </span>
+                        <div class="filter-bar__options">
+                            @foreach (var size in _logPageSelectorSizes)
+                            {
+                                <button type="button"
+                                        class="filter-bar__item @(size == _logCurrentPageSize ? "active" : "")"
+                                        @onclick="() => OnLogPageSizeChangedAsync(size)">
+                                    @size
+                                </button>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <p class="card__footer-text">
+                        Choose which page to go
+                    </p>
+                    <div class="card__actions">
+                        <button class="btn btn-primary" @onclick="LoadLogFirstPage">
+                            First
+                        </button>
+                        <button class="btn btn-primary" @onclick="LoadLogPrevPage">
+                            Prev
+                        </button>
+                        <button class="btn btn-primary" @onclick="LoadLogNextPage">
+                            Next
+                        </button>
+                        <button class="btn btn-primary" @onclick="LoadLogLastPage">
+                            Last
+                        </button>
+                    </div>
+                </div>
+                break;
+            default:
+                <p>You need a default, or IDE will warn you.</p>
+                break;
+        }
+    </main>
+</div>

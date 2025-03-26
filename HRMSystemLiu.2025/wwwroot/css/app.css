@@ -1,0 +1,419 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .checkbox {
+        @apply w-4 h-4 border border-stone-200 rounded-md appearance-none cursor-pointer bg-transparent transition duration-200;
+    }
+    .checkbox:checked {
+        @apply bg-stone-800 border-stone-800;
+    }
+    .checkbox:focus {
+        @apply border-stone-800 outline-0;
+        box-shadow: none !important;
+    }
+    .checkbox:hover {
+        @apply border-stone-400;
+    }
+}
+
+/* 容器整体背景 */
+.neko-init-container {
+    @apply min-h-screen flex justify-center items-center p-8 bg-white transition-all duration-500 ease-out;
+    background-image: linear-gradient(to bottom, #ffffff, #fafafa);
+}
+
+/* 内部容器 */
+.neko-init-secondary-container {
+    @apply bg-white p-8 border border-stone-100 rounded-xl shadow-md max-w-sm w-full transform transition-transform duration-300 ease-in-out;
+    animation: popIn 0.5s ease-out;
+}
+
+/* 标题 */
+.neko-init-title {
+    @apply text-3xl font-bold text-stone-900 mb-6 text-center;
+}
+
+/* 表单组 */
+.neko-init-form-group {
+    @apply mb-5;
+}
+
+/* 表单输入 */
+.neko-init-form-control {
+    @apply w-full p-3 border border-stone-200 rounded-lg text-base text-stone-800 focus:outline-none focus:border-stone-900 focus:ring-1 focus:ring-gray-300 transition-all duration-200;
+}
+
+.neko-init-form-control:focus {
+    @apply border-stone-900 ring-1 ring-gray-300;
+}
+
+/* 警告提示 */
+.neko-init-alert {
+    @apply p-3 mt-3 rounded-md text-sm transition-all duration-300;
+}
+
+.neko-init-alert-danger {
+    @apply text-red-700 bg-red-50 border border-red-300;
+}
+
+/* 按钮容器 */
+.neko-init-button-group {
+    @apply mt-6 text-center;
+}
+
+/* 基础按钮样式 */
+.neko-init-btn {
+    @apply w-full px-6 py-3 border border-stone-200 rounded-lg text-base cursor-pointer transition-colors duration-200 ease-in-out my-2 focus:outline-none;
+}
+
+/* 主按钮：黑色背景 */
+.neko-init-btn-primary {
+    @apply bg-stone-900 text-white border-stone-900;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.neko-init-btn-primary:hover,
+.neko-init-btn-primary:focus {
+    @apply bg-stone-800;
+}
+
+/* 次按钮：浅灰背景 */
+.neko-init-btn-secondary {
+    @apply bg-stone-50 text-stone-800 border-stone-300;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.neko-init-btn-secondary:hover,
+.neko-init-btn-secondary:focus {
+    @apply bg-stone-100;
+}
+
+/* 注册提示区域 */
+.neko-init-register-section {
+    @apply mt-4 text-center text-sm text-stone-600 transition-colors duration-300 ease-in-out;
+}
+
+/* 链接区域 */
+.neko-init-link-section {
+    @apply text-right mt-2 mb-2;
+}
+
+/* 链接样式 */
+.neko-init-link-section a,
+.neko-init-register-section a {
+    @apply text-blue-600 text-base no-underline transition-all duration-300 ease-in-out;
+}
+
+.neko-init-link-section a:hover,
+.neko-init-register-section a:hover {
+    @apply underline text-blue-700;
+}
+
+.neko-main-wrapper {
+    @apply flex flex-col min-h-screen bg-stone-100;
+}
+
+.neko-top-header {
+    @apply bg-stone-50 text-stone-800 px-4 py-4 flex items-center justify-between;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.neko-main-logo {
+    @apply text-xl font-bold;
+    margin-right: 8px;
+}
+
+.neko-top-nav {
+    @apply flex items-center space-x-4;
+}
+
+.neko-top-nav-link {
+    @apply text-stone-500 no-underline text-sm transition-colors duration-200;
+}
+
+.neko-top-nav-link:hover {
+    @apply text-stone-900;
+    text-decoration: none;
+}
+
+.neko-main-user {
+    @apply flex items-center;
+    margin-left: 8px;
+}
+
+.neko-main-avatar {
+    @apply w-8 h-8 rounded-full mr-3;
+}
+
+.neko-main-username {
+    @apply text-sm font-medium;
+}
+
+.main-footer {
+    @apply bg-stone-50 text-center px-4 py-3 border-t border-stone-200;
+}
+
+.main-footer span {
+    @apply text-xs text-stone-500;
+}
+
+.main-function-button {
+    @apply px-3 py-1.5 text-sm font-normal text-stone-500 rounded transition transform duration-200 cursor-pointer relative flex-shrink-0;
+    transform: translateY(0);
+}
+
+.main-function-button.active {
+    @apply text-stone-900;
+    transform: translateY(-1px);
+}
+
+.main-function-button::after {
+    content: "";
+    @apply absolute bottom-0 left-1/2 transition-all duration-200;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #000;
+}
+
+.main-function-button.active::after {
+    @apply w-1/2;
+}
+
+.main-function-button:hover {
+    @apply bg-stone-200 text-stone-900;
+}
+
+.main-function-header {
+    @apply flex bg-stone-50 text-stone-900 px-4 pb-1.5 items-center border-b border-stone-200;
+}
+
+@media (max-width: 640px) {
+    .main-function-header {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+/* 头像 */
+.avatar-upload {
+    @apply flex flex-col items-center mt-4;
+}
+.avatar-preview {
+    @apply relative flex items-center justify-center w-32 h-32 rounded-full overflow-hidden border border-stone-200 bg-stone-50 transition-colors duration-200 ease-in-out;
+}
+.avatar-preview img {
+    @apply w-full h-full object-cover;
+}
+.avatar-preview:hover .avatar-overlay {
+    @apply opacity-100;
+}
+.avatar-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 transition-opacity duration-200 text-white text-xs;
+}
+/* 按钮 */
+.btn {
+    @apply inline-flex items-center justify-center text-sm font-medium rounded-md px-3 py-1.5 transition-colors duration-200 cursor-pointer;
+}
+.btn:disabled,
+.btn:disabled:focus,
+.btn:disabled:hover {
+    @apply bg-stone-200 text-stone-500 ring-1 ring-inset ring-stone-300 cursor-not-allowed;
+}
+.btn-primary {
+    @apply bg-black text-stone-50 transition-all duration-200 ease-in-out;
+}
+.btn-primary:hover {
+    @apply bg-stone-800;
+}
+.btn-danger {
+    @apply bg-red-600 text-stone-50;
+}
+.btn-danger:hover {
+    @apply bg-red-800;
+}
+.btn-success {
+    @apply bg-green-600 text-stone-50 transition-all duration-200 ease-in-out;
+}
+/* 卡片 */
+.card {
+    @apply bg-stone-50 p-6 mt-8 border w-full max-w-full;
+}
+.card__title {
+    @apply text-lg font-bold text-stone-900;
+}
+.card__description {
+    @apply text-sm text-stone-900 pt-4;
+}
+.card__loading-overlay {
+    @apply flex items-center justify-center z-10 relative py-6 w-full h-full bg-stone-100;
+}
+.card__loading-overlay-text {
+    @apply text-lg font-bold text-stone-900;
+}
+.card__footer {
+    @apply rounded-b-lg border border-t-0 flex items-center px-6 py-3 max-w-full;
+}
+.card__footer-text {
+    @apply text-sm;
+}
+.card__footer:not(.error) {
+    @apply bg-stone-100 border-stone-200;
+}
+.card__footer.error {
+    @apply bg-red-50 border-red-200;
+}
+.card__footer-text:not(.error) {
+    @apply text-stone-500;
+}
+.card__footer-text.error {
+    @apply text-red-500;
+}
+.card__actions {
+    @apply flex items-center space-x-4 ml-auto;
+}
+.card-default {
+    @apply border-stone-200 rounded-t-lg;
+}
+.card-error {
+    @apply border-red-200 rounded-t-lg;
+}
+.card-simple {
+    @apply border-stone-200 rounded-lg;
+}
+/* 选择栏 */
+.filter-bar {
+    @apply flex items-center bg-stone-50 border border-stone-200 p-4 mt-4 rounded-md;
+}
+.filter-bar__label {
+    @apply text-sm font-medium text-stone-900 mr-auto;
+}
+.filter-bar__options {
+    @apply flex flex-wrap items-center gap-2;
+}
+.filter-bar__item {
+    @apply inline-flex items-center justify-center text-sm font-medium text-stone-900 border border-stone-300 rounded-md px-3 py-1.5 transition-all cursor-pointer;
+}
+.filter-bar__item:hover {
+    @apply border-stone-400;
+}
+.filter-bar__item.active,
+.filter-bar__item.active:hover {
+    @apply bg-black text-stone-50 border-transparent;
+}
+/* 网格 */
+.grid-group {
+    @apply grid gap-4 mt-4;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid-group__container {
+    @apply rounded-md overflow-x-auto border border-stone-200 mt-4 h-64 pr-4 pl-4;
+}
+.grid-group__item {
+    @apply p-4 border border-stone-200 rounded-lg text-sm text-stone-900;
+}
+.grid-group__item.active {
+    @apply bg-stone-200 transition-colors duration-200;
+}
+.grid-group__item:hover {
+    @apply border-stone-400 cursor-pointer;
+}
+/* 输入框 */
+.input-field {
+    @apply w-full border border-stone-200 bg-stone-50 px-4 py-2 text-sm rounded-md focus:outline-none transition duration-200 ease-in-out;
+}
+.input-field.error {
+    @apply border-red-500;
+}
+.input-field:focus {
+    @apply border-stone-600 ring ring-stone-300;
+}
+.input-field:hover {
+    @apply border-stone-400;
+}
+.input-field:disabled,
+.input-field:disabled:hover,
+.input-field:disabled:focus {
+    @apply cursor-not-allowed bg-stone-200 border-stone-200;
+    transition: none;
+}
+.input-field::placeholder {
+    @apply text-stone-400;
+}
+.input-field__error-text {
+    @apply mt-1 text-xs text-red-600;
+}
+.input-group {
+    @apply grid gap-4 mt-4;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.input-group__item {
+    @apply flex flex-1 flex-col;
+}
+.input-group__item label {
+    @apply text-xs font-medium text-stone-500 mb-2;
+}
+
+.settings-page__body {
+    @apply container pr-6 flex-1 pb-6;
+}
+.settings-page__header {
+    @apply flex items-center px-6 py-10 text-3xl font-semibold text-stone-900 border-b border-stone-200 mb-4;
+}
+/* 侧边栏 */
+.sidebar {
+    @apply min-h-screen top-12;
+    width: 320px;
+}
+.sidebar__menu {
+    @apply flex flex-col pl-6 pr-12 pt-8;
+}
+.sidebar__item {
+    @apply flex items-center pl-1.5 py-2.5 text-stone-500 rounded transition-colors duration-200 cursor-pointer;
+}
+.sidebar__item.active {
+    @apply text-stone-900 font-semibold;
+}
+.sidebar__item:hover {
+    @apply bg-stone-200;
+}
+.sidebar__item-text {
+    @apply flex-1 ml-1.5 text-sm;
+}
+/* 表格 */
+.table {
+    @apply table-auto border-collapse w-full;
+}
+.table tbody tr:hover {
+    @apply bg-stone-100;
+}
+.table__container {
+    @apply rounded-md overflow-y-auto overflow-x-auto border border-stone-200 mt-4 h-64;
+}
+.table__header,
+.table__header-cell,
+.table__body-cell {
+    @apply px-4 py-2;
+}
+.table__header-cell {
+    @apply sticky top-0 bg-stone-50 z-10 text-left text-xs font-medium text-stone-500 uppercase tracking-wide;
+}
+.table__body-cell {
+    @apply whitespace-nowrap text-sm text-stone-700 border-t border-stone-200;
+}
+.table__caption {
+    @apply text-xs text-stone-500 mt-4 text-center;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
