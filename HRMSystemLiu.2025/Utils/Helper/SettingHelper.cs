@@ -1,7 +1,7 @@
 using System.Data;
 using Microsoft.AspNetCore.Components;
 
-namespace HRMSystemLiu._2025.Pages;
+namespace HRMSystemLiu._2025.Utils.Helper;
 
 public class SettingHelper(string defaultPanel)
 {
@@ -23,7 +23,7 @@ public class SettingHelper(string defaultPanel)
         await LoadCurrentPanelDataAsync!();
     }
 
-    public MarkupString RenderTable(DataTable? table)
+    public static MarkupString RenderTable(DataTable? table)
     {
         if (table == null)
             return new MarkupString(
