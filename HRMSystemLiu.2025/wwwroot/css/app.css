@@ -241,6 +241,9 @@
 .card {
     @apply bg-stone-50 p-6 mt-8 border w-full max-w-full;
 }
+.card__grid__container {
+    @apply grid gap-6 grid-cols-3 px-6;
+}
 .card__title {
     @apply text-lg font-bold text-stone-900;
 }
@@ -390,7 +393,8 @@
     @apply bg-stone-100;
 }
 .table__container {
-    @apply rounded-md overflow-y-auto overflow-x-auto border border-stone-200 mt-4 h-64;
+    @apply rounded-md overflow-y-auto overflow-x-auto border border-stone-200 mt-4 h-64 w-full
+    sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px];
 }
 .table__header,
 .table__header-cell,
@@ -407,6 +411,13 @@
     @apply text-xs text-stone-500 mt-4 text-center;
 }
 
+.sort-asc::after {
+    content: " ▲";
+}
+
+.sort-desc::after {
+    content: " ▼";
+}
 @keyframes popIn {
     0% {
         opacity: 0;
