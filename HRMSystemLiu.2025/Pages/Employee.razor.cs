@@ -1,8 +1,7 @@
 using System.Data;
 using System.Text;
-using HRMSystemLiu._2025.Utils.Helper;
+using HRMSystemLiu._2025.Helper;
 using HRMSystemLiu.DAL;
-using HRMSystemLiu.Model;
 using HRMSystemLiu.Model.Database;
 using HRMSystemLiu.Model.Web;
 using Microsoft.AspNetCore.Components;
@@ -11,7 +10,7 @@ using Microsoft.JSInterop;
 
 namespace HRMSystemLiu._2025.Pages;
 
-public partial class EmployeeManager : ComponentBase
+public partial class Employee : ComponentBase
 {
     #region Lifecycle Methods
 
@@ -42,13 +41,13 @@ public partial class EmployeeManager : ComponentBase
 
     private string _avatarUrl = ConstProperty.DefaultAvatarUrl;
     private List<Department> _departmentList = [];
-    private Employee _editedEmployee = new();
+    private Model.Database.Employee _editedEmployee = new();
     private List<EmployeeLite>? _employeesLite;
     private DictionaryList _employeeIdList = new();
     private DataTable? _employeeTable;
     private IJSRuntime _jsRuntime = null!;
 
-    private Employee _newEmployee = new();
+    private Model.Database.Employee _newEmployee = new();
     private Guid _selectedEmployeeId = Guid.Empty;
     private readonly FunctionalInput<string> _nameSearch = new("Name");
     private readonly FunctionalInput<Guid> _departmentSearch = new("Department");
@@ -99,7 +98,8 @@ public partial class EmployeeManager : ComponentBase
         UpdateAvatarFromEmployee(_editedEmployee);
     }
 
-    private async Task AvatarHandler(InputFileChangeEventArgs e, Employee employee, bool immediateCommit = false)
+    private async Task AvatarHandler(InputFileChangeEventArgs e, Model.Database.Employee employee,
+        bool immediateCommit = false)
     {
         if (e.FileCount == 0) return;
 
@@ -118,7 +118,7 @@ public partial class EmployeeManager : ComponentBase
     {
         if (await EmployeeService.AddEmployeeAsync(_newEmployee))
         {
-            _newEmployee = new Employee();
+            _newEmployee = new Model.Database.Employee();
             await LoadEmployeeAsync();
             ResetAvatar();
         }
@@ -130,7 +130,7 @@ public partial class EmployeeManager : ComponentBase
         {
             _selectedEmployeeId = Guid.Empty;
             await LoadEmployeeLiteAsync();
-            _editedEmployee = new Employee();
+            _editedEmployee = new Model.Database.Employee();
         }
     }
 
@@ -242,7 +242,7 @@ public partial class EmployeeManager : ComponentBase
         _helper.IsLoading = loading;
     }
 
-    private void UpdateAvatarFromEmployee(Employee employee)
+    private void UpdateAvatarFromEmployee(Model.Database.Employee employee)
     {
         if (employee.Photo != null)
             _avatarUrl = GetImageUrl(CommonHelper.GetImageContentType(employee.Photo), employee.Photo);
