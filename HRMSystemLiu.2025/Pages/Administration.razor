@@ -1,5 +1,5 @@
 @page "/administration"
-@using HRMSystemLiu._2025.Utils.Helper
+@using HRMSystemLiu._2025.Helper
 @rendermode InteractiveServer
 @{ _helper.LoadCurrentPanelDataAsync = PanelInit; }
 
@@ -153,9 +153,6 @@
                         </button>
                     </div>
                 </div>
-                break;
-            default:
-                <p>You need a default, or IDE will warn you.</p>
                 break;
         }
     </main>
