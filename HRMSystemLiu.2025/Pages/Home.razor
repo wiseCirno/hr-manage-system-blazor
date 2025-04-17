@@ -1,0 +1,27 @@
+@layout HomeLayout
+@page "/"
+@rendermode InteractiveServer
+@inject NavigationManager Nav
+
+<PageTitle>HRMS - HomePage</PageTitle>
+<div class="card__grid__container">
+    <div>
+        <div class="card card-default">
+            <header class="card__title">
+                This is the root page
+            </header>
+            <p class="card__description">
+                The homepage has not been finished, but you can use the test card view to other pages.
+            </p>
+        </div>
+        <div class="card__footer">
+            <p class="card__footer-text">
+                Go to the page.
+            </p>
+            <div class="card__actions">
+                <button class="btn btn-primary" @onclick='() => Nav.NavigateTo("/login")'>Login</button>
+                <button class="btn btn-primary" @onclick='() => Nav.NavigateTo("/overview")'>Overview</button>
+            </div>
+        </div>
+    </div>
+</div>
