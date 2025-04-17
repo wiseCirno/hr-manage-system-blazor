@@ -1,5 +1,5 @@
 using System.Data;
-using HRMSystemLiu._2025.Utils.Helper;
+using HRMSystemLiu._2025.Helper;
 using HRMSystemLiu.DAL;
 using Microsoft.AspNetCore.Components;
 
@@ -8,9 +8,9 @@ namespace HRMSystemLiu._2025.Pages;
 public partial class Administration : ComponentBase
 {
     private readonly SettingHelper _helper = new("department");
-    private readonly int[] _logPageSelectorSizes = [5, 10, 20, 50, 100];
+    private readonly int[] _logPageSelectorSizes = [10, 20, 50, 100];
     private int _logCurrentPage = 1;
-    private int _logCurrentPageSize = 5;
+    private int _logCurrentPageSize = 10;
     private DataTable? _logTable;
     private int _logTotalPages;
     private string _newDepartment = string.Empty;
