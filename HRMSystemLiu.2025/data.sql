@@ -502,3 +502,17 @@ INSERT INTO `Department` (`Id`, `Name`)
 VALUES ('7c444dbb-8f93-460f-b113-8ad1df6876d1', '.net教学部');
 INSERT INTO `Department` (`Id`, `Name`)
 VALUES ('394d8cdc-4adb-4bfd-8f61-cc66eecf386d', '网络营销部');
+
+CREATE VIEW SalaryReport AS
+SELECT ROW_NUMBER() OVER
+    (ORDER BY e.Name)                    AS '序号',
+       e.Name                            AS '姓名',
+       BaseSalary                        AS '基本工资',
+       Bonus                             AS '奖金',
+       Fine                              AS '罚款',
+       Other                             AS '其他',
+       BaseSalary + Bonus - Fine + Other AS '合计',
+       ssi.SheetId                       AS 'SheetId'
+FROM SalarySheetItem AS ssi,
+     Employee as e
+WHERE ssi.EmployeeId = e.Id;
