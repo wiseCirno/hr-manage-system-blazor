@@ -3,7 +3,7 @@
 
 ## Requirements
 - Linux / OSX: `Npm`,`.NET9.0`,`mariadb` or `mysql`
-- Windows: `Node.js`,`NET9.0`,`mariadb`
+- Windows (Click the link to download installer): [Node.js](https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi), [NET9.0](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.203-windows-x64-installer), [mariadb](https://mirrors.tuna.tsinghua.edu.cn/mariadb///mariadb-11.7.2/winx64-packages/mariadb-11.7.2-winx64.msi)
 
 ## IDE
 The first option is Rider since the project hasn't been tested on Visual Studio.
@@ -30,4 +30,4 @@ The first option is Rider since the project hasn't been tested on Visual Studio.
 
 4. Execute the SQL script from data.sql. This script includes some example data for the tables.
 
-- Ensure that you have the NuGet package `MySqlConnector` installed.
+5. If Nuget packages are not automatically installed, you can manually add `DocumentFormat.OpenXml` to `HRMSystemLiu.2025` and add `MySqlConnector` to `HRMSystemLiu.DAL`
