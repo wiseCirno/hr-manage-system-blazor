@@ -1,7 +1,7 @@
 using System.Data;
 using Microsoft.AspNetCore.Components;
 
-namespace HRMSystemLiu._2025.Utils.Helper;
+namespace HRMSystemLiu._2025.Helper;
 
 public class SettingHelper(string defaultPanel)
 {
@@ -35,16 +35,16 @@ public class SettingHelper(string defaultPanel)
                 </div>
                 """);
         
-        var headerRow = $"<tr>{string.Join("", table.Columns.Cast<DataColumn>()
+        var headerRow = $"<tr class=\"table__header\">{string.Join("", table.Columns.Cast<DataColumn>()
             .Select(col => $"""<th class="table__header-cell">{col.ColumnName}</th>"""))}</tr>";
-        var thead = $"""<thead class="table__header">{headerRow}</thead>""";
+        var thead = $"<thead>{headerRow}</thead>";
         var bodyRows = table.Rows.Cast<DataRow>().Select(row =>
         {
             var rowCells = string.Join("", table.Columns.Cast<DataColumn>()
-                .Select(col => $"""<td class="table__body-cell">{row[col.ColumnName]}</td>"""));
+                .Select(col => $"<td class=\"table__body-cell\">{row[col.ColumnName]}</td>"));
             return $"<tr>{rowCells}</tr>";
         });
         var tbody = $"<tbody>{string.Join(Environment.NewLine, bodyRows)}</tbody>";
-        return new MarkupString("""<table class="table">""" + thead + Environment.NewLine + tbody + "</table>");
+        return new MarkupString("<table class=\"table\">" + thead + Environment.NewLine + tbody + "</table>");
     }
 }
