@@ -99,31 +99,12 @@ public static class EmployeeService
     {
         const string sql = "SELECT * FROM Employee WHERE Id = @Id";
         var table = await SqlHelper.QueryDataTableAsync(sql, new MySqlParameter("@Id", id));
-        var dr = table.Rows[0];
-        var employee = new Employee
+        if (table.Rows.Count == 0)
         {
-            Id = dr["Id"] is Guid guid ? guid : Guid.Parse(dr["Id"].ToString()!),
-            MarriageId =
-                dr["MarriageId"] is Guid marriageGuid ? marriageGuid : Guid.Parse(dr["MarriageId"].ToString()!),
-            PartyId = dr["PartyId"] is Guid partyGuid ? partyGuid : Guid.Parse(dr["PartyId"].ToString()!),
-            EducationId = dr["EducationId"] is Guid eduGuid ? eduGuid : Guid.Parse(dr["EducationId"].ToString()!),
-            GenderId = dr["GenderId"] is Guid genderGuid ? genderGuid : Guid.Parse(dr["GenderId"].ToString()!),
-            DepartmentId = dr["DepartmentId"] is Guid deptGuid ? deptGuid : Guid.Parse(dr["DepartmentId"].ToString()!),
-            Birthday = dr["Birthday"] is DateTime birthday ? birthday : DateTime.Parse(dr["Birthday"].ToString()!),
-            HireDate = dr["InDay"] is DateTime hireDate ? hireDate : DateTime.Parse(dr["InDay"].ToString()!),
-            Photo = dr["Photo"] as byte[],
-            WorkNo = dr["Number"].ToString() ?? string.Empty,
-            Name = dr["Name"].ToString() ?? string.Empty,
-            Telephone = dr["Telephone"].ToString() ?? string.Empty,
-            Email = dr["Email"].ToString() ?? string.Empty,
-            Address = dr["Address"].ToString() ?? string.Empty,
-            Remarks = dr["Remarks"].ToString() ?? string.Empty,
-            Resume = dr["Resume"].ToString() ?? string.Empty,
-            Nation = dr["Nation"].ToString() ?? string.Empty,
-            NativePlace = dr["NativePlace"].ToString() ?? string.Empty
-        };
+            throw new NullReferenceException($"No Employee found for id: {id}");
+        }
 
-        return employee;
+        return MapToEmployee(table.Rows[0]);
     }
 
     public static async Task<DataTable> GetEmployeeAsync(SearchCondition condition)
@@ -159,7 +140,25 @@ public static class EmployeeService
 
         return await SqlHelper.QueryDataTableAsync(sql.ToString(), parameters.ToArray());
     }
+    
+    public static async Task<List<Employee>> GetEmployeesByDepartmentIdAsync(Guid departmentId)
+    {
+        const string sql = "SELECT * FROM Employee WHERE DepartmentId = @DepartmentId";
+        var table = await SqlHelper.QueryDataTableAsync(sql, new MySqlParameter("@DepartmentId", departmentId));
 
+        return (from DataRow dr in table.Rows select MapToEmployee(dr)).ToList();
+    }
+    
+    public static async Task<int> GetEmployeesCountByDepartmentIdAsync(Guid departmentId)
+    {
+        const string sql = "SELECT COUNT(*) AS EmployeeCount FROM Employee WHERE DepartmentId = @DepartmentId";
+        var table = await SqlHelper.QueryDataTableAsync(sql, new MySqlParameter("@DepartmentId", departmentId));
+        if (table.Rows.Count == 0) return 0;
+        
+        var countValue = table.Rows[0]["EmployeeCount"];
+        return int.TryParse(countValue.ToString(), out var count) ? count : 0;
+    }
+    
     public static async Task<bool> UpdateEmployeeAsync(Employee employee)
     {
         const string sql = """
@@ -208,5 +207,32 @@ public static class EmployeeService
         };
 
         return await SqlHelper.ExecuteNonQueryAsync(sql, parameters) > 0;
+    }
+    
+    private static Employee MapToEmployee(DataRow dr)
+    {
+        var employee = new Employee
+        {
+            Id = dr["Id"] is Guid guid ? guid : Guid.Parse(dr["Id"].ToString()!),
+            MarriageId = dr["MarriageId"] is Guid marriageGuid ? marriageGuid : Guid.Parse(dr["MarriageId"].ToString()!),
+            PartyId = dr["PartyId"] is Guid partyGuid ? partyGuid : Guid.Parse(dr["PartyId"].ToString()!),
+            EducationId = dr["EducationId"] is Guid eduGuid ? eduGuid : Guid.Parse(dr["EducationId"].ToString()!),
+            GenderId = dr["GenderId"] is Guid genderGuid ? genderGuid : Guid.Parse(dr["GenderId"].ToString()!),
+            DepartmentId = dr["DepartmentId"] is Guid deptGuid ? deptGuid : Guid.Parse(dr["DepartmentId"].ToString()!),
+            Birthday = dr["Birthday"] is DateTime birthday ? birthday : DateTime.Parse(dr["Birthday"].ToString()!),
+            HireDate = dr["InDay"] is DateTime hireDate ? hireDate : DateTime.Parse(dr["InDay"].ToString()!),
+            Photo = dr["Photo"] as byte[],
+            WorkNo = dr["Number"].ToString() ?? string.Empty,
+            Name = dr["Name"].ToString() ?? string.Empty,
+            Telephone = dr["Telephone"].ToString() ?? string.Empty,
+            Email = dr["Email"].ToString() ?? string.Empty,
+            Address = dr["Address"].ToString() ?? string.Empty,
+            Remarks = dr["Remarks"].ToString() ?? string.Empty,
+            Resume = dr["Resume"].ToString() ?? string.Empty,
+            Nation = dr["Nation"].ToString() ?? string.Empty,
+            NativePlace = dr["NativePlace"].ToString() ?? string.Empty
+        };
+
+        return employee;
     }
 }
