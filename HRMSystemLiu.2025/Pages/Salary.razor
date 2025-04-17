@@ -1,0 +1,308 @@
+@page "/salary"
+@using HRMSystemLiu.Model.Web
+@inject IJSRuntime Js
+@rendermode InteractiveServer
+@{
+    _helper.LoadCurrentPanelDataAsync = PanelInit;
+    _jsRuntime = Js;
+}
+
+<PageTitle>HRMS - Salary</PageTitle>
+<header class="settings-page__header">
+    Salary
+</header>
+<div class="flex flex-col md:flex-row flex-1">
+    @* SideBar *@
+    <aside class="sidebar">
+        <nav class="sidebar__menu">
+            <div class="sidebar__item @(_helper.IsActivePanel("general") ? "active" : "")"
+                 style="cursor: pointer;"
+                 @onclick='() => SwitchPanel("general")'>
+                <span class="sidebar__item-text">
+                    General
+                </span>
+            </div>
+            <div class="sidebar__item @(_helper.IsActivePanel("reportForm") ? "active" : "")"
+                 style="cursor: pointer;"
+                 @onclick='() => SwitchPanel("reportForm")'>
+                <span class="sidebar__item-text">
+                    Report Form
+                </span>
+            </div>
+        </nav>
+    </aside>
+    @* Settings Body *@
+    <main class="settings-page__body">
+        @switch (_helper.ActivePanel)
+        {
+            case "general":
+                @* Overview *@
+                <div class="card card-simple">
+                    <header class="card__title">
+                        Overview
+                    </header>
+                    <p class="card__description">
+                        Here's all the historical salary sheets.
+                    </p>
+                    <div class="table__container">
+                        <table class="table">
+                            <thead>
+                            <tr class="table__header">
+                                <th class="table__header-cell" @onclick='() => SortTable("Year")'>
+                                    Year
+                                    @if (_sortColumn == "Year")
+                                    {
+                                        <span class="@(_sortDirection ? "sort-asc" : "sort-desc")"></span>
+                                    }
+                                </th>
+                                <th class="table__header-cell" @onclick='() => SortTable("Month")'>
+                                    Month
+                                    @if (_sortColumn == "Month")
+                                    {
+                                        <span class="@(_sortDirection ? "sort-asc" : "sort-desc")"></span>
+                                    }
+                                </th>
+                                <th class="table__header-cell" @onclick='() => SortTable("Department")'>
+                                    Department
+                                    @if (_sortColumn == "Department")
+                                    {
+                                        <span class="@(_sortDirection ? "sort-asc" : "sort-desc")"></span>
+                                    }
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @if (_salarySheetList.Any())
+                            {
+                                @foreach (var item in SortedSalarySheetList)
+                                {
+                                    <tr>
+                                        <td class="table__body-cell">@item.Year</td>
+                                        <td class="table__body-cell">@item.Month</td>
+                                        <td class="table__body-cell">
+                                            @_departmentList.FirstOrDefault(d => d.Id == item.DepartmentId)?.Name
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="4" class="table__body-cell">No salary sheets found.</td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table__caption">
+                        Click the header to sort salary sheets
+                    </div>
+                </div>
+                @* New Sheet *@
+                <div class="card card-default">
+                    <header class="card__title">
+                        New sheet
+                    </header>
+                    <p class="card__description">
+                        Generate a new salary sheet for specified department.
+                    </p>
+                    <div class="input-group">
+                        <div class="input-group__item">
+                            <!-- 年份 -->
+                            <label>Year</label>
+                            <InputSelect class="input-field" @bind-Value="_newSalarySheet.Year">
+                                @for (var i = 2025; i <= 2050; i++)
+                                {
+                                    <option value="@i">@i</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <div class="input-group__item">
+                            <!-- 月份 -->
+                            <label>Month</label>
+                            <InputSelect class="input-field" @bind-Value="_newSalarySheet.Month">
+                                @foreach (var m in ConstProperty.MonthList)
+                                {
+                                    <option value="@m.Key">@m.Value</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <div class="input-group__item">
+                            <!-- 部门 -->
+                            <label>Department</label>
+                            <InputSelect class="input-field"
+                                         @bind-Value="_newSalarySheet.DepartmentId">
+                                <option value="@Guid.Empty">-- Select --</option>
+                                @foreach (var item in _departmentList)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                    </div>
+                    <div class="table__container">
+                        <table class="table">
+                            <thead>
+                            <tr class="table__header">
+                                <th class="table__header-cell">Employee</th>
+                                <th class="table__header-cell">Base Salary</th>
+                                <th class="table__header-cell">Bonus</th>
+                                <th class="table__header-cell">Fine</th>
+                                <th class="table__header-cell">Other</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var item in _newSalarySheetItems)
+                            {
+                                <tr>
+                                    <td class="table__body-cell">
+                                        @(_filteredEmployees.FirstOrDefault(e => e.Id == item.EmployeeId)?.Name)
+                                    </td>
+                                    <td class="table__body-cell">
+                                        <InputNumber class="input-field w-full" @bind-Value="item.BaseSalary"/>
+                                    </td>
+                                    <td class="table__body-cell">
+                                        <InputNumber class="input-field w-full" @bind-Value="item.Bonus"/>
+                                    </td>
+                                    <td class="table__body-cell">
+                                        <InputNumber class="input-field w-full" @bind-Value="item.Fine"/>
+                                    </td>
+                                    <td class="table__body-cell">
+                                        <InputNumber class="input-field w-full" @bind-Value="item.Other"/>
+                                    </td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <div class="card__actions">
+                        @if (_existedSalarySheet)
+                        {
+                            <div class="btn btn-danger" @onclick="OverrideExistedSalarySheet">
+                                Override
+                            </div>
+                            <div class="btn btn-primary" @onclick="GetExistedSalarySheet">
+                                Get Existed
+                            </div>
+                        }
+                        else
+                        {
+                            <button class="btn btn-primary"
+                                    disabled="@(_newSalarySheet.DepartmentId == Guid.Empty)"
+                                    @onclick="SalarySheetHandler">
+                                @(_notCreated ? "Create" : "Save")
+                            </button>
+                        }
+                        <div class="btn btn-primary" @onclick="ResetNewSalarySheet">
+                            @(_existedSalarySheet ? "Cancel" : "Reset")
+                        </div>
+                    </div>
+                </div>
+                break;
+            case "reportForm":
+                <div class="card card-default">
+                    <header class="card__title">
+                        Filter & Preview
+                    </header>
+                    <p class="card__description">
+                        Get salary sheet preview by using specified year, month and department.
+                    </p>
+                    <div class="input-group">
+                        <div class="input-group__item">
+                            <!-- 年份 -->
+                            <label>Year</label>
+                            <InputSelect class="input-field" @bind-Value="_previewSalarySheet.Year">
+                                @for (var i = 2000; i <= 2050; i++)
+                                {
+                                    <option value="@i">@i</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <div class="input-group__item">
+                            <!-- 月份 -->
+                            <label>Month</label>
+                            <InputSelect class="input-field" @bind-Value="_previewSalarySheet.Month">
+                                @foreach (var m in ConstProperty.MonthList)
+                                {
+                                    <option value="@m.Key">@m.Value</option>
+                                }
+                            </InputSelect>
+                        </div>
+                        <div class="input-group__item">
+                            <!-- 部门 -->
+                            <label>Department</label>
+                            <InputSelect class="input-field"
+                                         @bind-Value="_previewSalarySheet.DepartmentId">
+                                <option value="@Guid.Empty">-- Select --</option>
+                                @foreach (var item in _departmentList)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+                    </div>
+                    <div class="table__container">
+                        <table class="table">
+                            <thead>
+                            <tr class="table__header">
+                                <th class="table__header-cell">序号</th>
+                                <th class="table__header-cell">姓名</th>
+                                <th class="table__header-cell">基本工资</th>
+                                <th class="table__header-cell">奖金</th>
+                                <th class="table__header-cell">罚款</th>
+                                <th class="table__header-cell">其他</th>
+                                <th class="table__header-cell">合计</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var item in _salaryReportItems)
+                            {
+                                <tr>
+                                    <td class="table__body-cell">@item.SerialNumber</td>
+                                    <td class="table__body-cell">@item.Name</td>
+                                    <td class="table__body-cell">@item.BaseSalary</td>
+                                    <td class="table__body-cell">@item.Bonus</td>
+                                    <td class="table__body-cell">@item.Fine</td>
+                                    <td class="table__body-cell">@item.Other</td>
+                                    <td class="table__body-cell">@item.Total</td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <div class="card__actions">
+                        <button class="btn btn-primary"
+                                disabled="@(_previewSalarySheet.DepartmentId == Guid.Empty)"
+                                @onclick="GetFilteredSalaryReport">
+                            Preview
+                        </button>
+                    </div>
+                </div>
+                <div class="card card-default">
+                    <header class="card__title">
+                        Export
+                    </header>
+                    <p class="card__description">
+                        You can download to doc or print the report.
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <div class="card__actions">
+                        <button class="btn btn-primary" onclick="window.print();">
+                            Print
+                        </button>
+                        <button class="btn btn-primary"
+                                disabled="@(_previewSalarySheet.DepartmentId == Guid.Empty || _salaryReportItems.Count == 0)"
+                                @onclick="DownloadSalaryReport">
+                            Download
+                        </button>
+                    </div>
+                </div>
+                break;
+        }
+    </main>
+</div>
