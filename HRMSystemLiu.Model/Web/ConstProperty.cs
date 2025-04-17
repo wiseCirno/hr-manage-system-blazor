@@ -2,7 +2,7 @@ namespace HRMSystemLiu.Model.Web;
 
 public static class ConstProperty
 {
-    public static List<string> NationList { get; } = 
+    public static List<string> NationList { get; } =
     [
         "汉", "壮", "满", "回", "苗", "维吾尔", "土家", "彝", "蒙古", "藏",
         "布依", "侗", "瑶", "朝鲜", "白", "哈尼", "哈萨克", "黎", "傣", "畲",
@@ -11,6 +11,22 @@ public static class ConstProperty
         "塔吉克", "阿昌", "普米", "鄂温克", "怒", "京", "基诺", "德昂", "保安",
         "俄罗斯", "裕固", "乌孜别克", "门巴", "鄂伦春", "独龙", "塔塔尔", "赫哲", "珞巴"
     ];
-    
+
+    public static Dictionary<int, string> MonthList { get; } = new()
+    {
+        { 1, "January" },
+        { 2, "February" },
+        { 3, "March" },
+        { 4, "April" },
+        { 5, "May" },
+        { 6, "June" },
+        { 7, "July" },
+        { 8, "August" },
+        { 9, "September" },
+        { 10, "October" },
+        { 11, "November" },
+        { 12, "December" }
+    };
+
     public static string DefaultAvatarUrl => "images/default-avatar.jpg";
 }
